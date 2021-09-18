@@ -1,0 +1,65 @@
+.custom-navbar {
+  display: inline-block;
+  width: 250px;
+  position: fixed;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background-color: #52616B;
+  margin-right: 0;
+  padding: 2rem;
+}
+.navbar-expanded {
+  transform: translate(0, 0);
+  transition: 0.75s;
+  color: #C9D6DF;
+}
+.navbar-collapsed {
+  transform: translate(-300px, 0);
+  transition: 0.75s;
+}
+.toggler-button {
+  position: absolute;
+  right: 12.5rem;
+  top: 2rem;
+  outline: none;
+  height: 30px;
+  width:30px;
+  background-color: #F0F5F9;
+  border-radius:15px;
+  border: none;
+}
+.toggler-button:focus {
+  box-shadow: 0 0 0 0;
+  outline: none;
+}
+.top,
+.middle,
+.bottom {
+  display: block;
+  transition: 0.75s;
+  height: 20px;
+  position:relative;
+  left:1.5px;
+}
+.middle {
+  position: relative;
+  bottom: 15.5px;
+}
+.bottom {
+  position: relative;
+  bottom: 30.5px;
+}
+.top-expanded {
+  transform: translate(0, 5px) rotate(135deg);
+  transition: 0.75s;
+}
+.middle-expanded {
+  transform: translate(0, 0px) rotate(-135deg);
+  transition: 0.75s;
+}
+.bottom-expanded {
+  transition: 0.4s;
+  visibility: hidden;
+  transform: translate(1200px, 0px) rotate(-140deg);
+}

@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400&family=Bitter:wght@500&display=swap');
+.body__container{
+    padding:7.5rem 10rem 0rem;
+    background-color: #F0F5F9;
+    font-family: 'Rubik', sans-serif;
+}
+.header__container{
+    z-index:1;
+    position:fixed;
+    width:100vw;
+    padding:1.5rem 10rem 0;
+    height:5.5rem;
+    background-color:#1E2022;
+}
+.header__heading{
+    font-size:2rem;
+    width:20%;
+    font-family: 'Bitter', serif;
+    color:#F0F5F9;
+}
+.navbar-toggler:focus{
+    box-shadow: 0 0 0 0;
+}
+.footer p{
+    margin-bottom:1rem;
+}
+.footer{
+    padding-bottom:2rem;
+}
+.lottie-animation{
+    width:30%;
+    display: inline-flex;
+    position: relative;
+    bottom:2rem
+    /* position:absolute;
+    right:5rem; */
+}
+.lottie-animation:hover{
+    cursor:default;
+
+}
+
+/****************About *****************/
+.about__container,.education__container,.skills__container,.contact__container,.project__container{
+    /* display:inline-flex;
+    width:100%;
+    justify-content: space-between; */
+}
+.about__content,.skills__content,.education__content,.contact__content, .project__content{
+    /* width:30%;
+    margin:0;
+    height:300px; */
+    display:inline-flex;
+    width:100%;
+    justify-content: space-between;
+}
+/* .about__content p,.education__container p,.skills__container p,.contact__container p,.project__container p{
+    position: relative;
+    top:2rem;
+} */
+.about__para,.contact__para,.education__para,.skills__para,.project__para{
+    width:40%;
+    position: relative;
+    top:2rem;
+}

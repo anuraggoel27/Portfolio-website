@@ -1,17 +1,33 @@
-import React from 'react'
-import {Header, About, Projects, Skills, Footer, Contact} from "./components/index.js";
-
+import React from "react";
+import {
+  Header,
+  About,
+  Education,
+  Projects,
+  Skills,
+  Footer,
+  Contact,
+} from "./components/index.js";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 const App = () => {
-    return (
-        <div>
-            <Header/>
-            <About/>
-            <Skills/>
-            <Projects/>
-            <Contact/>
-            <Footer/>
+  return (
+    <div className="app__wrapper">
+      <Header />
+      <div className="body__container">
+        <div className="content__container">
+          <About />
+          <Education />
+          <Skills />
+          <Projects />
+          <Contact />
+          <div className="footer">
+            <Footer />
+          </div>
         </div>
-    )
-}
+      </div>
+    </div>
+  );
+};
 
-export default App
+export default App;

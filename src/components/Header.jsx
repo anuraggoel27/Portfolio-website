@@ -2,8 +2,10 @@ import React from 'react';
 import {Navbar} from "./"
 const Header = () => {
     return (
-        <div>
-            <h1>Header</h1>
+        <div className="header__container">
+        <div className="header__heading">
+            <p>NoOne Codes</p>
+        </div>
             <Navbar/>
         </div>
     )
