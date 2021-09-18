@@ -21,17 +21,22 @@
 .navbar-toggler:focus{
     box-shadow: 0 0 0 0;
 }
-.footer p{
+.footer-content p{
     margin-bottom:1rem;
 }
-.footer{
+.footer__container{
+    width:100%;
+    padding:2rem 10rem;
+    background-color:#1E2022;
+    color:#F0F5F9;
     padding-bottom:2rem;
 }
 .lottie-animation{
-    width:30%;
-    display: inline-flex;
+    width:50%;
+    /* display: inline-flex; */
     position: relative;
-    bottom:2rem
+    bottom:3rem;
+    margin:0 auto;
     /* position:absolute;
     right:5rem; */
 }
@@ -40,26 +45,138 @@
 
 }
 
+
 /****************About *****************/
-.about__container,.education__container,.skills__container,.contact__container,.project__container{
+.about__content,.education__content{
+    width:85%;
+    margin:0 auto;
+}
+/* .about__container,.education__container,.skills__container,.contact__container,.project__container{
     /* display:inline-flex;
     width:100%;
     justify-content: space-between; */
-}
-.about__content,.skills__content,.education__content,.contact__content, .project__content{
-    /* width:30%;
-    margin:0;
-    height:300px; */
+/* } */ */
+
+.contact__content, .project__content{
     display:inline-flex;
     width:100%;
     justify-content: space-between;
 }
-/* .about__content p,.education__container p,.skills__container p,.contact__container p,.project__container p{
-    position: relative;
-    top:2rem;
-} */
-.about__para,.contact__para,.education__para,.skills__para,.project__para{
+
+.about__container,.education__container{
+    margin-bottom:3rem;
+}
+.contact__para,.project__para{
     width:40%;
     position: relative;
-    top:2rem;
+    top:0rem;
+}
+.about__para{
+    width:100%;
+    text-align: center;
+    word-wrap: normal;
+    display: flex; 
+    margin:0 auto;
+    font-size: 1.1rem;
+}
+
+
+/*******************EDUCATION******************/
+.education__content{
+    width:100%;
+}
+.education__para{
+    width:100%;
+    display: inline-flex; 
+    justify-content:space-between;
+    margin:0 auto;
+}
+
+.education-class{
+    width:31.5%;
+    height:175px;
+    border-radius:1rem;
+    color:#C9D6DF;
+    background-color:#1E2022 ;
+    padding:1.5rem 1rem;
+    /* margin:2rem auto; */
+    position: relative;
+}
+.education-school{
+    font-weight: bold;
+    color:#FFF;
+}
+.education-year{
+    position: absolute;
+    top:50%;
+}
+.education-division{
+    position: absolute;
+    top:62.5%;
+}
+.education-grades{
+    position:absolute;
+    top:75%;
+}
+
+.education__heading p{
+    font-size:2.5rem;
+}
+
+
+
+/*******************SKILLS*************/
+.skills__container{
+    margin-bottom: 3rem;
+}
+.skills__heading,.education__heading{
+    text-align:center;
+}
+.skills__heading p{
+    font-size:2.5rem;
+}
+.skills__content-inner{
+    display:inline-flex;
+    position: relative;
+    bottom:1rem;
+    width:100%;
+    justify-content: space-between;
+}
+.skills__para{
+    width:40%;
+    background-color: #1E2022;
+    color:#F0F5F9;
+    padding:2rem 3rem;
+    border-radius:1rem;
+}
+.skills__language{
+    padding:2rem 3.3rem;
+    width:40%;
+    background-color:#1E2022;
+    border-radius:1rem;
+}
+.language-heading p{
+    text-align:center;
+    color:#F0F5F9;
+}
+.skills__language-inner{
+    display: inline-flex;
+}
+.skill svg{
+    color:#52616B;
+}
+.skill svg:hover{
+    color:#F0F5F9;
+}
+.skill{
+    margin: 1rem 2rem;
+}
+.skill-progress{
+    height:20px;
+    background-color:#F0F5F9;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+}
+.skills__para p{
+    margin-bottom:0.5rem;
 }

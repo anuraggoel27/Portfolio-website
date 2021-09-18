@@ -15,7 +15,7 @@ const defaultOptions = {
 const SkillsAnimation = () => {
     return (
         <div className="lottie-animation">
-            <Lottie options={defaultOptions} height={300} width={300}/>
+            <Lottie options={defaultOptions} height={350} width={350}/>
         </div>
     )
 }
