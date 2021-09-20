@@ -14,8 +14,8 @@ const defaultOptions = {
 
 const ContactAnimation = () => {
     return (
-        <div className="lottie-animation">
-            <Lottie options={defaultOptions} height={400} width={405}/>
+        <div className="lottie-animation common">
+            <Lottie options={defaultOptions}/>
         </div>
     )
 }

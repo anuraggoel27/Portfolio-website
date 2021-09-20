@@ -24,10 +24,10 @@ const Skills = () => {
               <div
                 className="progress"
                 style={{
-                  "background-color": "#52616B",
+                  "backgroundColor": "#52616B",
                   height: "100%",
                   width: "70%",
-                  "border-radius": "10px",
+                  "borderRadius": "10px",
                 }}
               ></div>
             </div>
@@ -36,10 +36,10 @@ const Skills = () => {
               <div
                 className="progress"
                 style={{
-                  "background-color": "#52616B",
+                  "backgroundColor": "#52616B",
                   height: "100%",
                   width: "60%",
-                  "border-radius": "10px",
+                  "borderRadius": "10px",
                 }}
               ></div>
             </div>
@@ -48,10 +48,10 @@ const Skills = () => {
               <div
                 className="progress"
                 style={{
-                  "background-color": "#52616B",
+                  "backgroundColor": "#52616B",
                   height: "100%",
                   width: "80%",
-                  "border-radius": "10px",
+                  "borderRadius": "10px",
                 }}
               ></div>
             </div>
@@ -60,10 +60,10 @@ const Skills = () => {
               <div
                 className="progress"
                 style={{
-                  "background-color": "#52616B",
+                  "backgroundColor": "#52616B",
                   height: "100%",
                   width: "80%",
-                  "border-radius": "10px",
+                  "borderRadius": "10px",
                 }}
               ></div>
             </div>
@@ -72,10 +72,10 @@ const Skills = () => {
               <div
                 className="progress"
                 style={{
-                  "background-color": "#52616B",
+                  "backgroundColor": "#52616B",
                   height: "100%",
                   width: "70%",
-                  "border-radius": "10px",
+                  "borderRadius": "10px",
                 }}
               ></div>
             </div>

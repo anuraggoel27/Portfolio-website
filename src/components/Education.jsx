@@ -23,7 +23,7 @@ const Education = () => {
             <p className="education-school">Fatima Senior Secondary School, Gonda</p>
             <p className="education-year">2016</p>
             <p className="education-division">Class 10th</p>
-            <p className="education-grades">CGPA - 10</p>
+            <p className="education-grades">CGPA - 10 cgpa</p>
           </div>
         </div>
       </div>

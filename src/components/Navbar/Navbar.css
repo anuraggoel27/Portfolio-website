@@ -20,7 +20,7 @@
 }
 .toggler-button {
   position: absolute;
-  right: 11rem;
+  right: 11.75%;
   top: 2rem;
   outline: none;
   height: 30px;
@@ -62,4 +62,13 @@
   transition: 0.4s;
   visibility: hidden;
   transform: translate(1200px, 0px) rotate(-140deg);
+}
+
+
+@media only screen and (max-width:720px){
+  .toggler-button {
+    position: absolute;
+    right:2rem;
+    top: 1.725rem;
+  }
 }

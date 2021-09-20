@@ -14,8 +14,8 @@ const defaultOptions = {
 
 const AboutAnimation = () => {
     return (
-        <div className="lottie-animation">
-            <Lottie options={defaultOptions} height={500} width={505}/>
+        <div className="lottie-animation about">
+            <Lottie options={defaultOptions} />
         </div>
     )
 }
