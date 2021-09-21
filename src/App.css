@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400&family=Bitter:wght@500&display=swap");
 .body__container {
-  padding: 5.5rem 10rem 3rem;
+  padding: 2rem 10rem 3rem;
   background-color: #f0f5f9;
   font-family: "Rubik", sans-serif;
 }
@@ -11,15 +11,19 @@
   padding: 1.5rem 11rem 0;
   height: 5.5rem;
   background-color: #1e2022;
+  /* position: relative; */
 }
 .header__heading {
   font-size: 2rem;
-  /* position: relative;
-  left:7.65%; */
-  width: 100%;
-  word-wrap:normal;
+  position: absolute;
+  left: 10rem;
+  width: 40%;
+  word-wrap: normal;
   font-family: "Bitter", serif;
+}
+.header__heading a {
   color: #f0f5f9;
+  text-decoration: none;
 }
 .navbar-toggler:focus {
   box-shadow: 0 0 0 0;
@@ -34,30 +38,40 @@
   color: #f0f5f9;
   padding-bottom: 2rem;
 }
-.lottie-animation.common{
-  width:35%;
-  height:35%;
+.lottie-animation.common {
+  width: 35%;
+  height: 35%;
   margin: 0 auto;
   position: relative;
-  bottom:1rem;
+  bottom: 1rem;
 }
 .lottie-animation.common:hover {
   cursor: none;
 }
 
-.scroll-button__container{
-  position:fixed;
-  bottom:2rem;
-  right:2rem;
-  font-size:1.5rem;
+.scroll-button__container {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  font-size: 1.5rem;
 }
-.scroll-button{
-  background-color: #52616B;
-  color:#C9D6DF;
-  border:none;
-  width:2.5rem;
-  height:2.5rem;
-  border-radius:1.25rem;
+.scroll-button {
+  background-color: #52616b;
+  color: #c9d6df;
+  border: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 1.25rem;
+  transition: 0.5s;
+}
+.scroll-button:hover {
+  background-color: #c9d6df;
+  color: #52616b;
+  transition: 0.5s;
+}
+.scroll-button a {
+  text-decoration: none;
+  color: #c9d6df;
 }
 
 /****************About *****************/
@@ -67,14 +81,14 @@
   margin: 0 auto;
 }
 .lottie-animation.about {
-  width:505px;
-  height:500px;
+  width: 505px;
+  height: 500px;
   margin: 0 auto;
   position: relative;
-  bottom:2rem;
+  bottom: 2rem;
 }
-.about__container{
-  margin-bottom:3rem;
+.about__container {
+  margin-bottom: 3rem;
 }
 
 .contact__para,
@@ -95,7 +109,23 @@
   border-radius: 1rem;
   padding: 2rem 7rem 1.5rem;
 }
-
+.about__para button {
+  border: none;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  background-color: #52616b;
+  color: #c9d6df;
+  transition: 0.5s;
+}
+.resume-button:hover {
+  background-color: #f0f5f9;
+  color: #1e2022;
+  transition: 0.5s;
+}
+/* .resume-button a:hover{
+  color:#1e2022;
+} */
 /*******************EDUCATION******************/
 .education__para {
   width: 100%;
@@ -167,7 +197,7 @@
   border-radius: 1rem;
 }
 .skills__language {
-  padding: 2rem 0rem;
+  padding: 1.25rem 0rem;
   text-align: center;
   width: 40%;
   background-color: #1e2022;
@@ -189,7 +219,9 @@
   transition: 0.5s;
 }
 .skill {
-  margin: 1rem 2rem;
+  margin: 1rem 1.5rem;
+  display: block;
+  width: 70px;
 }
 .skill-progress {
   height: 20px;
@@ -200,7 +232,14 @@
 .skills__para p {
   margin-bottom: 0.5rem;
 }
-
+.skill span {
+  color: #52616b;
+  transition: 0.5s;
+}
+.skill span:hover {
+  color: #f0f5f9;
+  transition: 0.5s;
+}
 /**********************Projects*******************/
 
 .project__projects {
@@ -218,10 +257,21 @@
   border-radius: 1rem;
   position: relative;
 }
+.project__project a {
+  text-decoration: none;
+  transition: 0.5s;
+}
+.project__project a:hover {
+  color: #52616b;
+  transition: 0.5s;
+}
 .project__title {
   font-size: 1.5rem;
   font-weight: bold;
   color: white;
+}
+.project__description {
+  margin-top: 0.75rem;
 }
 .project__tech-used {
   display: inline-flex;
@@ -286,16 +336,16 @@
   transition: 0.5s;
 }
 .contact__content-icon.instagram {
-    background: #d6249f;
-    background: radial-gradient(
-      circle at 30% 107%,
-      #fdf497 0%,
-      #fdf497 5%,
-      #fd5949 45%,
-      #d6249f 60%,
-      #285aeb 90%
-    );
-    transition: 0.5s;
+  background: #d6249f;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  transition: 0.5s;
 }
 .contact__content-icon.instagram:hover {
   transition: 0.5s;
@@ -357,277 +407,273 @@
   margin-bottom: 1rem;
 }
 
-.footer__content{
-    font-size:1.5rem;
-    text-align:center;
-}
-
-
-
-@media only screen and (max-width:720px){
-.body__container {
-    padding: 6rem 1rem 3rem;
-    background-color: #f0f5f9;
-    font-family: "Rubik", sans-serif;
-}
-.header__container {
-  z-index: 1;
-  position: fixed;
-  width: 100vw;
-  padding: 1.5rem 3rem 0;
-  height: 5.5rem;
-  background-color: #1e2022;
-}
-.header__heading {
+.footer__content {
   font-size: 1.5rem;
-  width: 100%;
-}
-.lottie-animation.about{
-  width: 100%;
-  height: 100%;
-  position: relative;
-  bottom: 3rem;
-  margin: 0 auto;
-}
-.lottie-animation.common{
-  width: 80%;
-  height: 80%;
-  position: relative;
-  bottom: 1rem;
-  margin: 0 auto;
-}
-.lottie-animation:hover {
-  cursor: default;
-}
-.scroll-button__container{
-  bottom:1rem;
-  right:1rem;
-
+  text-align: center;
 }
 
-.about__container,
-.education__container {
-  margin-bottom: 3rem;
-}
-.contact__para,
-.project__para {
-  width: 40%;
-  position: relative;
-  top: 0rem;
-}
-.about__para {
-  width: 100%;
-  text-align:left;
-  padding: 2rem 2rem 1.5rem;
-}
-
-/*******************EDUCATION******************/
-.education-class {
-  width: 100%;
-  margin-bottom:2rem;
-}
-/*******************SKILLS*************/
-.skills__language {
-  width: 100%;
-}
-.skills__para {
-  width: 100%;
-  margin-bottom: 2rem;
-  padding: 2rem 1rem;
-  border-radius: 1rem;
-}
-.skill-trio{
-  width:33.3%;
-}
-.skill {
-  margin: 1rem 1rem;
-}
-
-/**********************Projects*******************/
-.project__project {
-  width: 100%;
-  padding: 2rem 1rem;
-  margin: 0rem 0rem 1rem;
-  height: auto;
-}
-/********************Contact************/
-.contact__para {
-  background-color: #1e2022;
-  width: 100%;
-  border-radius: 1rem;
-  padding: 2rem 1rem;
-  color: #f0f5f9;
-}
-.contact__para-heading {
-  text-align: left;
-  font-size: 1.5rem;
-}
-.contact__container {
-  margin-bottom: 1rem;
-  /* text-align: center; */
-}
-.contact__content-icon {
-  color: #f0f5f9;
-  border: none;
-  border-radius: 1.25rem;
-  width: 2.5rem;
-  height: 2.5rem;
-  margin: 1rem 0.5rem 1rem;
-}
-.footer__container {
-  width: 100%;
-  padding: 2rem 1rem;
-}
-.footer-content{
-  width:100%;
-}
-}
-
-
-@media only screen and (max-width:1250px) and (min-width:720px){
+@media only screen and (max-width: 720px) {
   .body__container {
     padding: 6rem 1rem 3rem;
     background-color: #f0f5f9;
     font-family: "Rubik", sans-serif;
-}
-.header__container {
-  z-index: 1;
-  position: fixed;
-  width: 100vw;
-  padding: 1.5rem 3rem 0;
-  height: 5.5rem;
-  background-color: #1e2022;
-}
-.header__heading {
-  font-size: 1.5rem;
-  width: 100%;
-}
-.lottie-animation.about{
-  width: 100%;
-  height: 100%;
-  position: relative;
-  bottom: 3rem;
-  margin: 0 auto;
-}
-.lottie-animation.common{
-  width: 50%;
-  height: 50%;
-  position: relative;
-  bottom: 1rem;
-  margin: 0 auto;
-}
-.lottie-animation:hover {
-  cursor: default;
+  }
+  .header__container {
+    z-index: 1;
+    position: fixed;
+    width: 100vw;
+    padding: 1.5rem 3rem 0;
+    height: 5.5rem;
+    background-color: #1e2022;
+  }
+  .header__heading {
+    font-size: 1.5rem;
+    position: absolute;
+    left: 1.175rem;
+    width: 100%;
+  }
+  .lottie-animation.about {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    bottom: 3rem;
+    margin: 0 auto;
+  }
+  .lottie-animation.common {
+    width: 80%;
+    height: 80%;
+    position: relative;
+    bottom: 1rem;
+    margin: 0 auto;
+  }
+  .lottie-animation:hover {
+    cursor: default;
+  }
+  .scroll-button__container {
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+  .about__container,
+  .education__container {
+    margin-bottom: 3rem;
+  }
+  .contact__para,
+  .project__para {
+    width: 40%;
+    position: relative;
+    top: 0rem;
+  }
+  .about__para {
+    width: 100%;
+    text-align: left;
+    padding: 2rem 2rem 1.5rem;
+  }
+
+  /*******************EDUCATION******************/
+  .education-class {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  /*******************SKILLS*************/
+  .skills__language {
+    width: 100%;
+  }
+  .skills__para {
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+  }
+  .skill-trio {
+    width: 33.3%;
+  }
+  .skill {
+    margin: 1rem 1rem;
+  }
+
+  /**********************Projects*******************/
+  .project__project {
+    width: 100%;
+    padding: 2rem 1rem;
+    margin: 0rem 0rem 1rem;
+    height: auto;
+  }
+  /********************Contact************/
+  .contact__para {
+    background-color: #1e2022;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 2rem 1rem;
+    color: #f0f5f9;
+  }
+  .contact__para-heading {
+    text-align: left;
+    font-size: 1.5rem;
+  }
+  .contact__container {
+    margin-bottom: 1rem;
+    /* text-align: center; */
+  }
+  .contact__content-icon {
+    color: #f0f5f9;
+    border: none;
+    border-radius: 1.25rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 1rem 1rem 1rem 0rem;
+  }
+  .footer__container {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+  .footer-content {
+    width: 100%;
+  }
 }
 
+@media only screen and (max-width: 1250px) and (min-width: 720px) {
+  .body__container {
+    padding: 6rem 1rem 3rem;
+    background-color: #f0f5f9;
+    font-family: "Rubik", sans-serif;
+  }
+  .header__container {
+    z-index: 1;
+    position: fixed;
+    width: 100vw;
+    padding: 1.5rem 3rem 0;
+  }
+  .header__heading {
+    font-size: 1.75rem;
+    position: absolute;
+    left: 1.1rem;
+    width: 100%;
+  }
+  .lottie-animation.about {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    bottom: 3rem;
+    margin: 0 auto;
+  }
+  .lottie-animation.common {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    bottom: 1rem;
+    margin: 0 auto;
+  }
+  .lottie-animation:hover {
+    cursor: default;
+  }
 
-.about__container,
-.education__container {
-  margin-bottom: 3rem;
-}
-.contact__para,
-.project__para {
-  width: 40%;
-  position: relative;
-  top: 0rem;
-}
-.about__para {
-  width: 100%;
-  text-align:left;
-  padding: 2rem 3rem 1.5rem;
-}
+  .about__container,
+  .education__container {
+    margin-bottom: 3rem;
+  }
+  .contact__para,
+  .project__para {
+    width: 40%;
+    position: relative;
+    top: 0rem;
+  }
+  .about__para {
+    width: 100%;
+    text-align: left;
+    padding: 2rem 3rem 1.5rem;
+  }
 
-/*******************EDUCATION******************/
-.education-class {
-  
-}
-.education__para {
-  width: 100%;
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0 auto;
-}
-.education__container {
-  margin-bottom: 3rem;
-}
+  /*******************EDUCATION******************/
+  .education-class {
+  }
+  .education__para {
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  .education__container {
+    margin-bottom: 3rem;
+  }
 
-.education-class {
-  width: 100%;
-  margin-bottom:2rem;
-  padding: 2rem 3rem;
-  /* margin:2rem auto; */
-  position: relative;
-}
-.education-school {
-  font-weight: bold;
-  color: #fff;
-}
-.education-year {
-  position: absolute;
-  top: 45%;
-}
-.education-division {
-  position: absolute;
-  top: 57.5%;
-}
-.education-grades {
-  position: absolute;
-  top: 70%;
-}
-/*******************SKILLS*************/
-.skills__language {
-  width: 100%;
-}
-.skills__para {
-  width: 100%;
-  margin-bottom: 2rem;
-  padding: 2rem 3rem;
-  border-radius: 1rem;
-}
-.skill-trio{
-  width:100%;
-}
-.skill {
-  margin: 1rem 2.5rem;
-}
+  .education-class {
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 2rem 3rem;
+    /* margin:2rem auto; */
+    position: relative;
+  }
+  .education-school {
+    font-weight: bold;
+    color: #fff;
+  }
+  .education-year {
+    position: absolute;
+    top: 45%;
+  }
+  .education-division {
+    position: absolute;
+    top: 57.5%;
+  }
+  .education-grades {
+    position: absolute;
+    top: 70%;
+  }
+  /*******************SKILLS*************/
+  .skills__language {
+    width: 100%;
+  }
+  .skills__para {
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+  }
+  .skill-trio {
+    width: 100%;
+  }
+  .skill {
+    margin: 1rem 2.5rem;
+  }
 
-/**********************Projects*******************/
-.project__project {
-  width: 100%;
-  padding: 2rem 3rem;
-  margin: 0rem 0rem 1rem;
-  height: auto;
-}
-/********************Contact************/
-.contact__para {
-  background-color: #1e2022;
-  width: 100%;
-  border-radius: 1rem;
-  padding: 2rem 3rem;
-  color: #f0f5f9;
-}
-.contact__para-heading {
-  text-align: left;
-  font-size: 1.5rem;
-}
-.contact__container {
-  margin-bottom: 1rem;
-  /* text-align: center; */
-}
-.contact__content-icon {
-  color: #f0f5f9;
-  border: none;
-  border-radius: 1.25rem;
-  width: 2.5rem;
-  height: 2.5rem;
-  margin: 1rem 0.5rem 1rem;
-}
-.footer__container {
-  width: 100%;
-  padding: 2rem 1rem;
-}
-.footer-content{
-  width:100%;
-}
+  /**********************Projects*******************/
+  .project__project {
+    width: 100%;
+    padding: 2rem 3rem;
+    margin: 0rem 0rem 1rem;
+    height: auto;
+  }
+  /********************Contact************/
+  .contact__para {
+    background-color: #1e2022;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 2rem 3rem;
+    color: #f0f5f9;
+  }
+  .contact__para-heading {
+    text-align: left;
+    font-size: 1.5rem;
+  }
+  .contact__container {
+    margin-bottom: 1rem;
+    /* text-align: center; */
+  }
+  .contact__content-icon {
+    color: #f0f5f9;
+    border: none;
+    border-radius: 1.25rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 1rem 0.5rem 1rem;
+  }
+  .footer__container {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+  .footer-content {
+    width: 100%;
+  }
 }

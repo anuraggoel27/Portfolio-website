@@ -7,10 +7,11 @@ import {
   Skills,
   Footer,
   Contact,
-  ScrollToTop
+  ScrollToTop,
 } from "./components/index.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+
 const App = () => {
   return (
     <div className="app__wrapper">
@@ -19,15 +20,15 @@ const App = () => {
         <div className="content__container">
           <About />
           <Skills />
-          <Education />          
+          <Education />
           <Projects />
           <Contact />
           <ScrollToTop />
         </div>
       </div>
       <div className="footer">
-            <Footer />
-          </div>
+        <Footer />
+      </div>
     </div>
   );
 };
