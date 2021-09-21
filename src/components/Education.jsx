@@ -8,8 +8,8 @@ const Education = () => {
       </div>
       <div className="education__content">
         <EducationAnimation />
-        <div className="education__para">
-          <div className="education-class">
+        <div className="education__para" style={{overflow:"hidden"}}>
+          <div data-aos="fade-right" data-aos-duration="1000" className="education-class">
             <p className="education-school">
               Internation Institute Of Information Technology, Bhubaneswar.
             </p>
@@ -17,13 +17,13 @@ const Education = () => {
             <p className="education-division">B.Tech in CSE</p>
             <p className="education-grades">CGPA - 8.06</p>
           </div>
-          <div className="education-class">
+          <div data-aos="fade-up" data-aos-duration="1000" className="education-class">
             <p className="education-school">Sri Raghukul Vidyapeeth, Gonda</p>
             <p className="education-year">2018</p>
             <p className="education-division">Class 12th</p>
             <p className="education-grades">Percentage - 86%</p>
           </div>
-          <div className="education-class">
+          <div data-aos="fade-left" data-aos-duration="1000" className="education-class">
             <p className="education-school">
               Fatima Senior Secondary School, Gonda
             </p>

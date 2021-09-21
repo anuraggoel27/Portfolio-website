@@ -23,8 +23,8 @@ const Projects = () => {
       </div>
       <div className="project__content">
         <ProjectAnimation />
-        <div className="project__projects">
-          <div className="project__project">
+        <div className="project__projects" style={{overflow:"hidden"}}>
+          <div data-aos="fade-right" data-aos-duration="1000" className="project__project">
             <a
               href="https://kartavya-academy-777bf.web.app/"
               target="_blank"
@@ -64,7 +64,7 @@ const Projects = () => {
               </LightTooltip>
             </div>
           </div>
-          <div className="project__project">
+          <div data-aos="fade-left" data-aos-duration="1000" className="project__project">
             <a
               href="http://noone-chats.netlify.app/"
               target="_blank"
@@ -94,7 +94,7 @@ const Projects = () => {
               </LightTooltip>
             </div>
           </div>
-          <div className="project__project">
+          <div data-aos="fade-up-right" data-aos-duration="1000" className="project__project">
             <a
               href="http://no-one-blogs.herokuapp.com/"
               target="_blank"
@@ -115,7 +115,7 @@ const Projects = () => {
               </LightTooltip>
             </div>
           </div>
-          <div className="project__project">
+          <div data-aos="fade-up-left" data-aos-duration="1000" className="project__project">
             <a
               href="https://github.com/anuraggoel27?tab=repositories"
               target="_blank"

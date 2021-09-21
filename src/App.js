@@ -9,9 +9,13 @@ import {
   Contact,
   ScrollToTop,
 } from "./components/index.js";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
+
+AOS.init();
 const App = () => {
   return (
     <div className="app__wrapper">

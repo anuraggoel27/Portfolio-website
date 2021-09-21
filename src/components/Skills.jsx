@@ -20,8 +20,8 @@ const Skills = () => {
       </div>
       <div className="skills__content">
         <SkillsAnimation />
-        <div className="skills__content-inner">
-          <div className="skills__para">
+        <div className="skills__content-inner" style={{overflow:"hidden"}}>
+          <div data-aos="fade-right" data-aos-duration="1000" className="skills__para">
             <p>Frontend Development</p>
             <div className="skill-progress">
               <div
@@ -94,7 +94,7 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className="skills__language">
+          <div data-aos="fade-left" data-aos-duration="1000" className="skills__language">
             <div className="language-heading">
               <p>TECHNOLOGIES</p>
             </div>

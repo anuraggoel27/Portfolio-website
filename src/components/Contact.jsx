@@ -15,7 +15,7 @@ const Contact = () => {
       </div>
       <div className="contact__content">
         <ContactAnimation />
-        <div className="contact__para">
+        <div data-aos="fade-up" data-aos-duration="1000"  className="contact__para">
           <div className="contact__para-heading">
             <p>Want to be in touch?</p>
           </div>
